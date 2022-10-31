@@ -1,0 +1,7 @@
+{
+    "env": {
+        "MONGO_USER": "kostia",
+        "MONGO_PASSWORD": "oGwrNLEAWRbbN5Ol",
+        "MONGO_DB": "garmn"
+    }
+}
