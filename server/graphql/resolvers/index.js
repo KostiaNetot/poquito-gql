@@ -12,7 +12,6 @@ module.exports = {
     },
 
     createUser: async args => {
-        debugger;
         try {
             const { username, age, posts } = args.user;
             const user = new User({

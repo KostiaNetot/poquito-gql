@@ -10,18 +10,18 @@ function App() {
   const [users, setUsers] = useState([]);
   const [username, setUsername] = useState('');
   const [age, setAge] = useState(0);
-  
+
   useEffect(() => {
     if (!loading) setUsers(data.getAllUsers);
   }, [data]);
 
   const addUser = (e) => {
     e.preventDefault();
-    
+
     newUser({
       variables: {
         input: {
-          username, 
+          username,
           age: Number(age),
         }
       }
@@ -61,8 +61,8 @@ function App() {
 
       <div>
         {users.length > 0 && (
-          users.map(u => (
-            <div key={u.id} className='user'>{u.id}. <b>{u.username}</b> {u.age}</div>
+          users.map((u, i) => (
+            <div key={u._id} className='user'>{i + 1}. <b>{u.username}</b> - {u.age} yo</div>
           ))
         )}
       </div>
