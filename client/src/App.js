@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div>
-      <h1>GARN stack</h1>
+      <h1>Poquito GQL</h1>
       <form>
         <input onChange={e => setUsername(e.target.value)} value={username} name='username' type='text' />
         <input onChange={e => setAge(e.target.value)} value={age} name='age' type='number' />

@@ -20,8 +20,7 @@ module.exports = {
                 posts,
             })
             const newUser = await user.save();
-            // return { ...newUser._doc, _id: newUser.id }
-            return newUser;
+            return { ...newUser._doc, _id: newUser.id }
         } catch (error) {
             throw error
         }
